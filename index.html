@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
       rel="stylesheet"
     />
+    <script src="./main.js"></script>
   </head>
   <body id="body-style">
     <div class="page">
@@ -61,8 +62,59 @@
                 id="password"
               />
             </div>
+            <legend>INFORMAÇÕES DO MENTOR</legend>
+            <div class="input-wrapper">
+              <label for="nameTeacher"
+                >Nome do seu mentor
+                <span class="span">(só o primeiro nome)</span></label
+              >
+              <input
+                type="text"
+                id="nameTeacher"
+                name="nameTeacher"
+                class="input-wrapper"
+              />
+            </div>
+            <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+            <h2 class="subtitle">PRIMEIRA MENTORIA</h2>
+            <div class="time">
+              <div class="input-wrapper">
+                <label for="date"
+                  >Data <span class="span">(DD/MM/AAAA)</span></label
+                >
+                <input type="date" id="date" name="date" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hour">Das</label>
+                <input type="time" id="hour" name="hour" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hour">Até</label>
+                <input type="time" id="hour" name="hour" />
+              </div>
+            </div>
+            <h2 class="subtitle">SEGUNDA MENTORIA</h2>
+            <div class="time">
+              <div class="input-wrapper">
+                <label for="date"
+                  >Data <span class="span">(DD/MM/AAAA)</span></label
+                >
+                <input type="date" id="date" name="date" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hour">Das</label>
+                <input type="time" id="hour" name="hour" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hour">Até</label>
+                <input type="time" id="hour" name="hour" />
+              </div>
+            </div>
           </div>
         </fieldset>
+        <div class="submit">
+          <input type="submit" id="button" value="SALVAR" />
+        </div>
       </form>
     </div>
   </body>

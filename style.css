@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 input,
 textarea,
@@ -18,7 +23,7 @@ body {
 body::before {
   content: '';
   width: 200%;
-  height: 368px;
+  height: 436px;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +36,7 @@ body::before {
 }
 header {
   width: 319px;
-  margin-top: 74px;
+  margin-top: 140px;
 }
 
 header h1 {
@@ -40,6 +45,7 @@ header h1 {
   line-height: 60px;
   color: white;
   font-size: 48px;
+  margin-bottom: 18px;
 }
 header p {
   color: white;
@@ -49,8 +55,34 @@ form {
   width: 750px;
   margin-top: 38px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 20px 20px 0px 0px;
   padding: 64px;
+}
+
+.submit {
+  position: absolute;
+  width: 750px;
+  height: 160px;
+  background-color: #535971;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 64px;
+  margin-left: -64px;
+  text-align: center;
+}
+
+.submit #button {
+  background: #ff5374;
+  width: 608px;
+  border-radius: 20px;
+  border: none;
+
+  height: 56px;
+  margin-top: 53px;
+
+  color: white;
+  font-size: 20px;
+  font-family: 'Staatliches', cursive;
+  align-items: center;
 }
 
 fieldset {
@@ -70,11 +102,18 @@ fieldset legend {
   line-height: 34px;
   color: #535971;
 
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e6e6f0;
   width: 100%;
   padding-bottom: 16px;
 }
 
+.subtitle {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+}
 .span {
   margin-left: 12px;
   line-height: 20px;
@@ -108,11 +147,17 @@ fieldset legend {
   line-height: 26px;
 }
 
-.names {
+.names,
+.time {
   display: inline-flex;
   gap: 21px;
 }
 
-.names .input-wrapper input {
+.names .input-wrapper input,
+#date {
   width: 300px;
+}
+
+#hour {
+  width: 140px;
 }

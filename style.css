@@ -82,8 +82,8 @@ fieldset legend {
   width: 46.875rem;
   height: 10rem;
   background-color: #535971;
-  border-radius: 0rem 0rem 0.063rem 0.063rem;
   text-align: center;
+  border-radius: 0 0 20px 20px;
 }
 
 .submit #button {

@@ -20,7 +20,7 @@
         <h1 class="titles">MENTORIA</h1>
         <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
       </header>
-      <form>
+      <form id="form">
         <fieldset>
           <div class="fieldset-wrapper">
             <legend>Informações Pessoais</legend>
@@ -32,11 +32,12 @@
                   type="text"
                   name="name"
                   id="name"
+                  required
                 />
               </div>
               <div class="input-wrapper">
                 <label for="nickname"> Sobrenome </label>
-                <input type="text" id="nickname" name="nickname" />
+                <input type="text" id="nickname" name="nickname" required />
               </div>
             </div>
             <div class="input-wrapper">
@@ -49,6 +50,7 @@
                 name="email"
                 id="email"
                 placeholder="seuemail@%.com"
+                required
               />
             </div>
             <div class="input-wrapper">
@@ -60,6 +62,8 @@
                 type="password"
                 name="password"
                 id="password"
+                minlength="6"
+                required
               />
             </div>
             <legend>INFORMAÇÕES DO MENTOR</legend>
@@ -82,15 +86,15 @@
                 <label for="date"
                   >Data <span class="span">(DD/MM/AAAA)</span></label
                 >
-                <input type="date" id="date" name="date" />
+                <input type="date" id="date" name="date" required />
               </div>
               <div class="input-wrapper">
                 <label for="hour">Das</label>
-                <input type="time" id="hour" name="hour" />
+                <input type="time" id="hour" name="hour" required />
               </div>
               <div class="input-wrapper">
                 <label for="hour">Até</label>
-                <input type="time" id="hour" name="hour" />
+                <input type="time" id="hour" name="hour" required />
               </div>
             </div>
             <h2 class="subtitle">SEGUNDA MENTORIA</h2>
@@ -112,10 +116,10 @@
             </div>
           </div>
         </fieldset>
-        <div class="submit">
-          <input type="submit" id="button" value="SALVAR" />
-        </div>
       </form>
+      <div class="submit">
+        <input form="form" type="submit" id="button" value="SALVAR" />
+      </div>
     </div>
   </body>
 </html>
